@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #9079fa;
+}
+
+.container {
+    position: absolute;
+    width: min(120vw, 40em);
+    background-color: #fff;
+    border-radius: 0.8em;
+    margin: auto;
+    left: 0px;
+    right: 0px;
+    top: 1.875em;
+    padding: 2em 2.5em;
+    box-shadow: 0px 1em 2em rgba(64, 17, 113, 0.15);
+}
+
+#wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    & input {
+        position: relative;
+        padding: 0.35em 0.5em;
+        border: none;
+        width: 70%;
+        outline: none;
+        border-bottom: 2px solid #cccad1;
+        font-size: 16px;
+
+        &:focus {
+            border-color: #7a5df8;
+        }
+    }
+
+    & button {
+        width: 25%;
+        padding: 0 2em;
+        background-color: #7a5df8;
+        border: none;
+        outline: none;
+        border-radius: 2em;
+        color: #ffffff;
+        font-weight: 400;
+        font-size: 1em;
+        cursor: pointer;
+    }
+}
+
+#tasks-container {
+    /* background-color: #7a5df8; */
+    position: relative;
+    padding: 1em 0.5em;
+    margin-top: 1em;
+    width: 100%;
+    border-radius: 0.5em;
+
+
+    & .each-task {
+        background-color: #ffffff;
+        padding: 0.8em 0em 0.8em 1em;
+        display: grid;
+        grid-template-columns: 1fr 12fr 2fr 2fr;
+        border-radius: 0.5em;
+        box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.15);
+        align-items: center;
+        cursor: pointer;
+
+        &:not(:first-child) {
+            margin-top: 1em;
+        }
+
+        & .task-check {
+            position: relative;
+            /* appearance: none; */
+            height: 18px;
+            width: 18px;
+            cursor: pointer;
+        }
+
+        & .text {
+            font-size: 1em;
+            word-break: break-all;
+            border: none;
+            width: 90%;
+        }
+
+        & button {
+            color: #ffffff;
+            padding: 0.5em 0;
+            width: 76%;
+            border-radius: 0.5em;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            font-size: large;
+        }
+
+        & .delete {
+            background-color: #fb3b3b;
+        }
+
+        & .edit {
+            background-color: #0b87ff;
+        }
+    }
+}
