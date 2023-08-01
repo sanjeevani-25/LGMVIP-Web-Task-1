@@ -11,8 +11,15 @@ body {
     background: #9079fa;
 }
 
+header {
+    text-align: center;
+    padding: 2em;
+    margin-top: 2em;
+    color: #fff;
+}
+
 .container {
-    position: absolute;
+    /* position: absolute; */
     width: min(120vw, 40em);
     background-color: #fff;
     border-radius: 0.8em;
@@ -65,6 +72,9 @@ body {
     width: 100%;
     border-radius: 0.5em;
 
+    & #rem-tasks {
+        color: #6644fb;
+    }
 
     & .each-task {
         background-color: #ffffff;
