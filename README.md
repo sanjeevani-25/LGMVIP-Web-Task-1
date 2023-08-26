@@ -23,3 +23,6 @@ It provides an efficient way to manage tasks. The application allows users to ke
 7. **Auto-Save Feature:** The application auto-saves edits to tasks after a certain delay.
 
 ## Demo
+
+https://github.com/sanjeevani-25/LGMVIP-Web-Task-1/assets/96921605/9ef40207-5454-4ad9-9a14-e3f057e0134b
+
